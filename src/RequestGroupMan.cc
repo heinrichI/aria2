@@ -1051,6 +1051,7 @@ void RequestGroupMan::initWrDiskCache()
   size_t limit = option_->getAsInt(PREF_DISK_CACHE);
   if (limit > 0) {
     wrDiskCache_ = make_unique<WrDiskCache>(limit);
+    A2_LOG_WARN(fmt("DiskCache size=%u", limit));
   }
 }
 

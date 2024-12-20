@@ -177,7 +177,7 @@ std::vector<OptionHandler*> OptionHandlerFactory::createOptionHandlers()
 #ifdef DEFAULT_DISK_CACHE
                                                   DEFAULT_DISK_CACHE,
 #else
-                                                  "16M",
+                                                  "64M",
 #endif
                                                   0));
     op->addTag(TAG_ADVANCED);
